@@ -2,7 +2,7 @@
     "name": "friday/array_helper",
     "description": "PHP handy array helper",
     "type": "library",
-    "license": "FRIDAY",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Friday",
