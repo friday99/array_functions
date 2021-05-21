@@ -1,0 +1,19 @@
+{
+    "name": "friday/array_helper",
+    "description": "PHP handy array helper",
+    "type": "library",
+    "license": "FRIDAY",
+    "authors": [
+        {
+            "name": "Friday",
+            "email": "oranzh.cc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "files": ["src/functions.php"]
+    }
+}
