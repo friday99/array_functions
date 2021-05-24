@@ -1,6 +1,6 @@
 {
     "name": "friday/array_helper",
-    "description": "PHP handy array helper",
+    "description": "Array functions commonly used in daily development",
     "type": "library",
     "license": "proprietary",
     "authors": [
