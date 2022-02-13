@@ -13,7 +13,6 @@ namespace Friday;
 function array_rand_value(array $array, int $numReq = 1)
 {
     if (! count($array)) return;
-
     $keyeys = array_rand($array, $numReq);
 
     if ($numReq === 1) {
@@ -55,7 +54,7 @@ function array_remove_key_recursive(array &$array, string $needle)
 }
 
 /**
- * Transform a multidimensional based on parent id value array to tree structure
+ * Transform a two-dimensional based on parent id value array to tree structure
  *
  * @param array   $array   based on id, parent index
  * @param string  $parent_key  parent id index
@@ -63,7 +62,9 @@ function array_remove_key_recursive(array &$array, string $needle)
  * @param string  $children   children index
  * @return array
  */
-function array_convert_tree($array, $parent_key = 'parent', $key = 'id', $children = 'children') {
+function array_convert_tree($array, $parent_key = 'parent', $key = 'id', $children = 'children')
+{
+    if (! count($array)) return;
     $res = [];
     foreach ($array as $value) {
         isset($res[$value[$parent_key]]) ?: $res[$value[$parent_key]] = [];

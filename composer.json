@@ -1,6 +1,11 @@
 {
     "name": "friday/array_helper",
     "description": "Array functions commonly used in daily development",
+    "keywords": [
+        "Friday",
+        "array",
+        "helper"
+    ],
     "type": "library",
     "license": "proprietary",
     "authors": [
@@ -13,7 +18,19 @@
     "require": {
         "php": ">=7.0"
     },
+
+    "require-dev": {
+        "phpunit/phpunit" : "^9.4"
+    },
     "autoload": {
         "files": ["src/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Friday\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }
